@@ -6,7 +6,7 @@ import { symptomMap } from "../data/symptoms";
 
 export default function SymptomChecker() {
   const [messages, setMessages] = useState([
-    { sender: "bot", text: "Hi 👋 I am MedBot. Tell me your symptoms." }
+    { sender: "bot", text: "Hi there, I am MedBot. Tell me your symptoms." }
   ]);
   const [input, setInput] = useState("");
   const navigate = useNavigate();
@@ -33,7 +33,7 @@ export default function SymptomChecker() {
           },
           {
             sender: "bot",
-            text: "Click below to find the best doctors within your budget 💰"
+            text: "Click below to find the best doctors within your budget "
           }
         ]);
       } else {
@@ -41,7 +41,7 @@ export default function SymptomChecker() {
           ...updatedMessages,
           {
             sender: "bot",
-            text: "Sorry 😔 I couldn't identify the disease. Try simple words like fever, cough, headache."
+            text: "Sorry , I couldn't identify the disease. Try simple words like fever, cough, headache."
           }
         ]);
       }
