@@ -91,7 +91,7 @@ export default function SymptomChecker() {
           style={{ marginTop: "10px" }}
           onClick={() => navigate("/budget")}
         >
-          Find Doctors 💊
+          Find Best Doctors 
         </button>
       </div>
     </div>
