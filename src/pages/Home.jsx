@@ -17,18 +17,18 @@ export default function Home() {
 
         <div style={styles.heroBtns}>
           <Link to="/symptoms" style={styles.primaryBtn}>
-            🤖 Check Symptoms
+             Check Symptoms
           </Link>
 
           <Link to="/medicine" style={styles.secondaryBtn}>
-            💊 Buy Medicines
+             Buy Medicines
           </Link>
         </div>
       </section>
 
       {/* FEATURES */}
       <section className="card">
-        <h2>🚀 What MedCare Offers</h2>
+        <h2> What MedCare Offers</h2>
 
         <div style={styles.grid}>
           <Feature
