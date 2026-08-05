@@ -2,25 +2,20 @@
 import numpy as np
 from PIL import Image
 import io
-import tensorflow as tf
 
 def process_image(image_bytes: bytes) -> np.ndarray:
-    """
-    Processes an uploaded image to the format expected by EfficientNetB0.
-    - Loads bytes into a PIL Image
-    - Converts to RGB (removes alpha channels if PNG)
-    - Resizes to 224x224
-    - Expands dimensions for batching shape (1, 224, 224, 3)
-    """
     image = Image.open(io.BytesIO(image_bytes))
-    
+
     if image.mode != "RGB":
         image = image.convert("RGB")
-        
+
     image = image.resize((224, 224))
+
+    import tensorflow as tf
+
     img_array = tf.keras.utils.img_to_array(image)
     img_array = np.expand_dims(img_array, axis=0)
-    
+
     return img_array
 
 def process_symptoms(user_symptoms: list, all_model_features: list) -> np.ndarray:
