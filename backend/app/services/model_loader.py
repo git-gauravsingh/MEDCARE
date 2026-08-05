@@ -1,7 +1,6 @@
 # backend/app/services/model_loader.py
 import json
-import joblib  
-import tensorflow as tf
+import joblib
 import pandas as pd
 from app.config import settings
 import logging
@@ -26,8 +25,9 @@ class ModelLoader:
             logger.info("XGBoost model loaded successfully.")
             self.label_encoder = joblib.load(settings.LABEL_ENCODER_PATH)
             logger.info("Label Encoder loaded successfully.")
-            self.image_model = tf.keras.models.load_model(settings.EFFICIENTNET_MODEL_PATH)
-            logger.info("EfficientNet model loaded successfully.")
+            self.image_model = None
+            self.image_model_loaded = False
+            logger.info("Image model will be loaded on first request.")
             with open(settings.CLASS_NAMES_PATH, 'r') as f:
                 self.class_names = json.load(f)
 
@@ -67,5 +67,22 @@ class ModelLoader:
         except Exception as e:
             logger.error(f"Failed to load models: {str(e)}")
             raise e
+        
+            
+    def get_image_model(self):
+        if self.image_model is None:
+            logger.info("Loading EfficientNet model...")
+
+            import tensorflow as tf
+
+            self.image_model = tf.keras.models.load_model(
+                settings.EFFICIENTNET_MODEL_PATH
+            )
+
+            self.image_model_loaded = True
+            logger.info("EfficientNet model loaded.")
+
+        return self.image_model
+
 
 ml_models = ModelLoader()

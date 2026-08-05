@@ -40,8 +40,7 @@ def create_app() -> FastAPI:
     async def health_check():
         return {
             "status": "healthy",
-            "models_loaded": ml_models.xgb_model is not None and ml_models.image_model is not None
-        }
+            "models_loaded": ml_models.xgb_model is not None        }
 
     return app
 

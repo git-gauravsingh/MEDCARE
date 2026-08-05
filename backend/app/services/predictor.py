@@ -38,7 +38,7 @@ def predict_disease_from_symptoms(symptoms: list) -> PredictionResponse:
 def predict_disease_from_image(image_bytes: bytes) -> PredictionResponse:
     try:
         img_array = process_image(image_bytes)
-        predictions = ml_models.image_model.predict(img_array)[0]
+        predictions = ml_models.get_image_model().predict(img_array)[0]
         
         top_3_indices = np.argsort(predictions)[-3:][::-1]
         top_3_predictions = {}
