@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import axios from "axios";
-import { 
-    FaMapMarkerAlt, FaStar, FaUserMd, FaDirections, FaPhoneAlt, FaClock, 
-    FaArrowLeft, FaWheelchair, FaParking, FaPrescriptionBottleAlt, FaWifi, FaCheckCircle 
+import {
+    FaMapMarkerAlt, FaStar, FaUserMd, FaDirections, FaPhoneAlt, FaClock,
+    FaArrowLeft, FaWheelchair, FaParking, FaPrescriptionBottleAlt, FaWifi, FaCheckCircle
 } from "react-icons/fa";
 
 const ClinicDetails = () => {
     const { id } = useParams();
-    
+
     // Naye state variables
     const [clinic, setClinic] = useState(null);
     const [loading, setLoading] = useState(true);
@@ -19,7 +19,9 @@ const ClinicDetails = () => {
     useEffect(() => {
         const fetchClinicDetails = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/api/clinics/${id}`);
+                const response = await axios.get(
+                    `${import.meta.env.VITE_API_URL}/clinics/${id}`
+                );
                 setClinic(response.data);
                 setLoading(false);
             } catch (err) {
@@ -42,11 +44,11 @@ const ClinicDetails = () => {
     };
 
     if (loading) return <div className="min-h-screen flex justify-center items-center text-xl dark:text-white"><span className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mr-3"></span> Loading Clinic Details...</div>;
-    if (error) return <div className="min-h-screen flex flex-col justify-center items-center text-xl text-red-500">{error}<br/><Link to="/clinics" className="text-blue-500 underline text-sm mt-4">Back to Clinics</Link></div>;
+    if (error) return <div className="min-h-screen flex flex-col justify-center items-center text-xl text-red-500">{error}<br /><Link to="/clinics" className="text-blue-500 underline text-sm mt-4">Back to Clinics</Link></div>;
     if (!clinic) return null;
 
     return (
-        <motion.div 
+        <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
@@ -65,7 +67,7 @@ const ClinicDetails = () => {
                     <div className="absolute inset-0 bg-gradient-to-tr from-blue-100 to-gray-50 dark:from-blue-900/20 dark:to-gray-800 opacity-50"></div>
                     <span className="z-10 font-medium">Clinic Image</span>
                 </div>
-                
+
                 <div className="flex-1 w-full">
                     <div className="flex justify-between items-start mb-2">
                         <h1 className="text-3xl font-bold text-gray-900 dark:text-white">{clinic.name}</h1>
@@ -73,7 +75,7 @@ const ClinicDetails = () => {
                             <FaStar /> {clinic.rating || 4.5} ({clinic.reviewCount || 0})
                         </span>
                     </div>
-                    
+
                     <span className="inline-block text-xs font-bold uppercase tracking-wider bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 px-3 py-1 rounded-full mb-4">
                         {clinic.category} Center
                     </span>
@@ -105,7 +107,7 @@ const ClinicDetails = () => {
 
             {/* DETAILS GRID */}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                
+
                 {/* LEFT COLUMN */}
                 <div className="lg:col-span-1 flex flex-col gap-6">
                     <div className="bg-white dark:bg-gray-800 p-6 rounded-3xl shadow-sm border border-gray-100 dark:border-gray-700">
@@ -134,7 +136,7 @@ const ClinicDetails = () => {
                     <h3 className="font-bold text-xl text-gray-900 dark:text-white mb-6 flex items-center gap-2">
                         <FaUserMd className="text-blue-500" /> Doctors at this Clinic
                     </h3>
-                    
+
                     <div className="flex flex-col gap-4">
                         {clinic.doctorsList && clinic.doctorsList.length > 0 ? clinic.doctorsList.map((doc) => (
                             <div key={doc._id} className="flex flex-col sm:flex-row items-center justify-between bg-gray-50 dark:bg-gray-700/50 border border-gray-100 dark:border-gray-600 p-4 rounded-2xl hover:border-blue-300 dark:hover:border-blue-500 transition-colors gap-4">

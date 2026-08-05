@@ -23,7 +23,7 @@ const Clinics = () => {
     const [searchQuery, setSearchQuery] = useState("");
     const [activeSpecialty, setActiveSpecialty] = useState("All");
     const [isMapView, setIsMapView] = useState(false);
-    
+
     // Naye state variables backend ke liye
     const [clinics, setClinics] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -35,7 +35,9 @@ const Clinics = () => {
     useEffect(() => {
         const fetchClinics = async () => {
             try {
-                const response = await axios.get("http://localhost:5000/api/clinics");
+                const response = await axios.get(
+                    `${import.meta.env.VITE_API_URL}/clinics`
+                );
                 setClinics(response.data);
                 setLoading(false);
             } catch (err) {
@@ -51,8 +53,8 @@ const Clinics = () => {
     // Filter Logic
     const filteredClinics = clinics.filter(clinic => {
         const matchesCategory = activeSpecialty === "All" || clinic.category === activeSpecialty;
-        const matchesSearch = clinic.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
-                              clinic.address.toLowerCase().includes(searchQuery.toLowerCase());
+        const matchesSearch = clinic.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            clinic.address.toLowerCase().includes(searchQuery.toLowerCase());
         return matchesCategory && matchesSearch;
     });
 
@@ -124,8 +126,8 @@ const Clinics = () => {
                             key={index}
                             onClick={() => setActiveSpecialty(specialty)}
                             className={`whitespace-nowrap px-5 py-2 rounded-full text-sm font-medium transition-all active:scale-95 ${activeSpecialty === specialty
-                                    ? 'bg-blue-600 text-white shadow-md'
-                                    : 'bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:border-blue-200 dark:hover:border-blue-800'
+                                ? 'bg-blue-600 text-white shadow-md'
+                                : 'bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:border-blue-200 dark:hover:border-blue-800'
                                 }`}
                         >
                             {specialty}

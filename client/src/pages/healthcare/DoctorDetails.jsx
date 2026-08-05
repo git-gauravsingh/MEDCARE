@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
-import { 
-  FaArrowLeft, FaUserMd, FaStar, FaBriefcase, 
-  FaMapMarkerAlt, FaHospitalAlt, FaRupeeSign, 
-  FaCheckCircle, FaClock, FaCalendarCheck 
+import {
+  FaArrowLeft, FaUserMd, FaStar, FaBriefcase,
+  FaMapMarkerAlt, FaHospitalAlt, FaRupeeSign,
+  FaCheckCircle, FaClock, FaCalendarCheck
 } from 'react-icons/fa';
 
 const DoctorDetails = () => {
@@ -16,7 +16,9 @@ const DoctorDetails = () => {
   useEffect(() => {
     const fetchDoctorDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/doctors/${id}`);
+        const response = await axios.get(
+          `${import.meta.env.VITE_API_URL}/doctors/${id}`
+        );
         setDoctor(response.data);
         setLoading(false);
       } catch (err) {
@@ -40,13 +42,13 @@ const DoctorDetails = () => {
       </Link>
 
       <div className="max-w-4xl mx-auto bg-[#1e293b] rounded-2xl p-6 md:p-8 shadow-xl border border-slate-700">
-        
+
         {/* Top Header Section */}
         <div className="flex flex-col md:flex-row items-center md:items-start gap-6 border-b border-slate-700 pb-8">
           <div className="bg-blue-600/20 p-6 rounded-full text-blue-400 border border-blue-500/30">
             <FaUserMd className="text-6xl" />
           </div>
-          
+
           <div className="flex-1 text-center md:text-left">
             <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 mb-2">
               <h1 className="text-3xl md:text-4xl font-bold text-white">{doctor.name}</h1>
@@ -56,9 +58,9 @@ const DoctorDetails = () => {
                 </span>
               )}
             </div>
-            
+
             <p className="text-xl text-blue-400 font-medium mb-4">{doctor.specialty}</p>
-            
+
             <div className="flex flex-wrap justify-center md:justify-start gap-6 text-slate-300">
               <div className="flex items-center">
                 <FaBriefcase className="text-slate-500 mr-2" />
@@ -74,7 +76,7 @@ const DoctorDetails = () => {
 
         {/* Info Grid Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8">
-          
+
           {/* Left Column: Location & Associated With */}
           <div className="space-y-6">
             <div>
@@ -113,10 +115,10 @@ const DoctorDetails = () => {
               <div className="flex justify-between items-center border-b border-slate-700 pb-3 mb-3">
                 <span className="text-slate-300 font-medium">Consultation Fee</span>
                 <span className="text-2xl font-bold text-white flex items-center">
-                  <FaRupeeSign className="text-xl"/>{doctor.consultationFee}
+                  <FaRupeeSign className="text-xl" />{doctor.consultationFee}
                 </span>
               </div>
-              
+
               <div className="flex justify-between items-center">
                 <span className="text-slate-300 font-medium">Status</span>
                 <span className={`font-semibold px-3 py-1 rounded-full text-sm ${doctor.isAvailableToday ? 'bg-green-500/10 text-green-400 border border-green-500/20' : 'bg-red-500/10 text-red-400 border border-red-500/20'}`}>
@@ -145,7 +147,7 @@ const DoctorDetails = () => {
               <FaCalendarCheck /> Book Appointment
             </button>
           </div>
-          
+
         </div>
       </div>
     </div>

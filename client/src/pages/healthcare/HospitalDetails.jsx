@@ -18,7 +18,9 @@ const HospitalDetails = () => {
         const fetchHospitalDetails = async () => {
             try {
                 // Backend se hospital aur uske linked doctors fetch kar rahe hain
-                const response = await axios.get(`http://localhost:5000/api/hospitals/${id}`);
+                const response = await axios.get(
+                    `${import.meta.env.VITE_API_URL}/hospitals/${id}`
+                );
                 setHospital(response.data.hospital);
                 setDoctors(response.data.doctors);
                 setLoading(false);
