@@ -7,6 +7,8 @@ from pathlib import Path
 # Database path (medicines.db ke bagal mein)
 DB_PATH = Path(__file__).resolve().parent.parent.parent / "databases" / "chat_history.db"
 
+DB_PATH.parent.mkdir(parents=True, exist_ok=True)
+
 def get_chat_db():
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
@@ -89,8 +91,8 @@ def save_message(session_id: str, sender: str, msg_type: str, content: str):
     conn.commit()
     conn.close()
     
-    # Message save hone ke turant baad token limit check karo
-    enforce_token_limit(4000)
+    # Message save hone ke turant baad token limit check karo (default 1000 tokens)
+    enforce_token_limit()
 
 def get_all_sessions():
     conn = get_chat_db()

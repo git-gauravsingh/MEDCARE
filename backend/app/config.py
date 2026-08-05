@@ -39,5 +39,3 @@ class Settings(BaseSettings):
 
 
 settings = Settings()
-
-print("Gemini Key:", settings.GEMINI_API_KEY)
