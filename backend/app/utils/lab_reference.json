@@ -1,0 +1,3613 @@
+{
+    "HEMOGLOBIN": {
+        "aliases": [
+            "HB",
+            "HGB",
+            "HEMOGLOBIN"
+        ],
+        "category": "Complete Blood Count",
+        "sample_type": "Blood",
+        "preferred_unit": "g/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": true,
+        "reference_range": {
+            "male": {
+                "low": 13.0,
+                "high": 17.0
+            },
+            "female": {
+                "low": 12.0,
+                "high": 15.0
+            }
+        },
+        "critical_range": {
+            "low": 7.0,
+            "high": 20.0
+        }
+    },
+    "RBC": {
+        "aliases": [
+            "RBC",
+            "RED BLOOD CELLS",
+            "ERYTHROCYTES"
+        ],
+        "category": "Complete Blood Count",
+        "sample_type": "Blood",
+        "preferred_unit": "million/uL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": true,
+        "reference_range": {
+            "male": {
+                "low": 4.5,
+                "high": 5.9
+            },
+            "female": {
+                "low": 4.1,
+                "high": 5.1
+            }
+        },
+        "critical_range": {
+            "low": 2.5,
+            "high": 7.0
+        }
+    },
+    "WBC": {
+        "aliases": [
+            "WBC",
+            "WHITE BLOOD CELLS",
+            "WHITE CELL COUNT",
+            "TLC"
+        ],
+        "category": "Complete Blood Count",
+        "sample_type": "Blood",
+        "preferred_unit": "/uL",
+        "alternate_units": [
+            "10^3/uL"
+        ],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 4000,
+                "high": 11000
+            }
+        },
+        "critical_range": {
+            "low": 1000,
+            "high": 30000
+        }
+    },
+    "PLATELETS": {
+        "aliases": [
+            "PLATELET",
+            "PLATELETS",
+            "PLATELET COUNT"
+        ],
+        "category": "Complete Blood Count",
+        "sample_type": "Blood",
+        "preferred_unit": "x10^3/uL",
+        "alternate_units": [
+            "uL"
+        ],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 150,
+                "high": 450
+            }
+        },
+        "critical_range": {
+            "low": 20,
+            "high": 1000
+        }
+    },
+    "HEMATOCRIT": {
+        "aliases": [
+            "HCT",
+            "HEMATOCRIT",
+            "PCV"
+        ],
+        "category": "Complete Blood Count",
+        "sample_type": "Blood",
+        "preferred_unit": "%",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": true,
+        "reference_range": {
+            "male": {
+                "low": 41.0,
+                "high": 50.0
+            },
+            "female": {
+                "low": 36.0,
+                "high": 44.0
+            }
+        },
+        "critical_range": {
+            "low": 20,
+            "high": 60
+        }
+    },
+    "MCV": {
+        "aliases": [
+            "MCV",
+            "MEAN CORPUSCULAR VOLUME"
+        ],
+        "category": "Complete Blood Count",
+        "sample_type": "Blood",
+        "preferred_unit": "fL",
+        "alternate_units": [
+            "fl",
+            "FL"
+        ],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 80,
+                "high": 100
+            }
+        },
+        "critical_range": {
+            "low": 60,
+            "high": 120
+        }
+    },
+    "MCH": {
+        "aliases": [
+            "MCH",
+            "MEAN CORPUSCULAR HEMOGLOBIN"
+        ],
+        "category": "Complete Blood Count",
+        "sample_type": "Blood",
+        "preferred_unit": "pg",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 27,
+                "high": 33
+            }
+        },
+        "critical_range": {
+            "low": 20,
+            "high": 40
+        }
+    },
+    "MCHC": {
+        "aliases": [
+            "MCHC",
+            "MEAN CORPUSCULAR HEMOGLOBIN CONCENTRATION"
+        ],
+        "category": "Complete Blood Count",
+        "sample_type": "Blood",
+        "preferred_unit": "g/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 32,
+                "high": 36
+            }
+        },
+        "critical_range": {
+            "low": 25,
+            "high": 40
+        }
+    },
+    "RDW": {
+        "aliases": [
+            "RDW",
+            "RED CELL DISTRIBUTION WIDTH"
+        ],
+        "category": "Complete Blood Count",
+        "sample_type": "Blood",
+        "preferred_unit": "%",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 11.5,
+                "high": 14.5
+            }
+        },
+        "critical_range": {
+            "low": 8,
+            "high": 25
+        }
+    },
+    "MPV": {
+        "aliases": [
+            "MPV",
+            "MEAN PLATELET VOLUME"
+        ],
+        "category": "Complete Blood Count",
+        "sample_type": "Blood",
+        "preferred_unit": "fL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 7.5,
+                "high": 11.5
+            }
+        },
+        "critical_range": {
+            "low": 5,
+            "high": 15
+        }
+    },
+    "PDW": {
+        "aliases": [
+            "PDW",
+            "PLATELET DISTRIBUTION WIDTH"
+        ],
+        "category": "Complete Blood Count",
+        "sample_type": "Blood",
+        "preferred_unit": "fL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 9,
+                "high": 17
+            }
+        },
+        "critical_range": {
+            "low": 5,
+            "high": 25
+        }
+    },
+    "NEUTROPHILS": {
+        "aliases": [
+            "NEUTROPHILS",
+            "NEUTROPHIL",
+            "NEUT"
+        ],
+        "category": "Complete Blood Count",
+        "sample_type": "Blood",
+        "preferred_unit": "%",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 40,
+                "high": 70
+            }
+        },
+        "critical_range": {
+            "low": 20,
+            "high": 90
+        }
+    },
+    "LYMPHOCYTES": {
+        "aliases": [
+            "LYMPHOCYTES",
+            "LYMPHOCYTE",
+            "LYMPH"
+        ],
+        "category": "Complete Blood Count",
+        "sample_type": "Blood",
+        "preferred_unit": "%",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 20,
+                "high": 40
+            }
+        },
+        "critical_range": {
+            "low": 5,
+            "high": 70
+        }
+    },
+    "MONOCYTES": {
+        "aliases": [
+            "MONOCYTES",
+            "MONOCYTE",
+            "MONO"
+        ],
+        "category": "Complete Blood Count",
+        "sample_type": "Blood",
+        "preferred_unit": "%",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 2,
+                "high": 8
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 20
+        }
+    },
+    "EOSINOPHILS": {
+        "aliases": [
+            "EOSINOPHILS",
+            "EOSINOPHIL",
+            "EOS"
+        ],
+        "category": "Complete Blood Count",
+        "sample_type": "Blood",
+        "preferred_unit": "%",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 1,
+                "high": 6
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 30
+        }
+    },
+    "BASOPHILS": {
+        "aliases": [
+            "BASOPHILS",
+            "BASOPHIL",
+            "BASO"
+        ],
+        "category": "Complete Blood Count",
+        "sample_type": "Blood",
+        "preferred_unit": "%",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 2
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 10
+        }
+    },
+    "FASTING BLOOD SUGAR": {
+        "aliases": [
+            "FBS",
+            "FBSL",
+            "FASTING BLOOD SUGAR",
+            "FASTING GLUCOSE",
+            "FASTING PLASMA GLUCOSE",
+            "FPG"
+        ],
+        "category": "Blood Sugar Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "g/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 70,
+                "high": 99
+            }
+        },
+        "critical_range": {
+            "low": 40,
+            "high": 400
+        }
+    },
+    "POSTPRANDIAL BLOOD SUGAR": {
+        "aliases": [
+            "PPBS",
+            "PP BLOOD SUGAR",
+            "POSTPRANDIAL BLOOD SUGAR",
+            "POST MEAL GLUCOSE",
+            "PPG"
+        ],
+        "category": "Blood Sugar Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "mg/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 70,
+                "high": 140
+            }
+        },
+        "critical_range": {
+            "low": 40,
+            "high": 500
+        }
+    },
+    "RANDOM BLOOD SUGAR": {
+        "aliases": [
+            "RBS",
+            "RANDOM BLOOD SUGAR",
+            "RANDOM GLUCOSE"
+        ],
+        "category": "Blood Sugar Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "mg/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 70,
+                "high": 140
+            }
+        },
+        "critical_range": {
+            "low": 40,
+            "high": 500
+        }
+    },
+    "HBA1C": {
+        "aliases": [
+            "HBA1C",
+            "HbA1c",
+            "GLYCATED HEMOGLOBIN",
+            "A1C",
+            "Hb A1c"
+        ],
+        "category": "Blood Sugar Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "%",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 4.0,
+                "high": 5.6
+            }
+        },
+        "critical_range": {
+            "low": 3.0,
+            "high": 14.0
+        }
+    },
+    "ESTIMATED AVERAGE GLUCOSE": {
+        "aliases": [
+            "EAG",
+            "ESTIMATED AVERAGE GLUCOSE",
+            "AVERAGE GLUCOSE"
+        ],
+        "category": "Blood Sugar Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "mg/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 70,
+                "high": 114
+            }
+        },
+        "critical_range": {
+            "low": 40,
+            "high": 400
+        }
+    },
+    "GLUCOSE": {
+        "aliases": [
+            "GLUCOSE",
+            "BLOOD GLUCOSE",
+            "SERUM GLUCOSE"
+        ],
+        "category": "Blood Sugar Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "mg/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 70,
+                "high": 140
+            }
+        },
+        "critical_range": {
+            "low": 40,
+            "high": 500
+        }
+    },
+    "SERUM CREATININE": {
+        "aliases": [
+            "CREATININE",
+            "SERUM CREATININE",
+            "CREAT"
+        ],
+        "category": "Kidney Function Test",
+        "sample_type": "Blood",
+        "preferred_unit": "mg/dL",
+        "alternate_units": [
+            "umol/L"
+        ],
+        "datatype": "numeric",
+        "gender_specific": true,
+        "reference_range": {
+            "male": {
+                "low": 0.74,
+                "high": 1.35
+            },
+            "female": {
+                "low": 0.59,
+                "high": 1.04
+            }
+        },
+        "critical_range": {
+            "low": 0.3,
+            "high": 8.0
+        }
+    },
+    "BLOOD UREA": {
+        "aliases": [
+            "UREA",
+            "BLOOD UREA",
+            "SERUM UREA"
+        ],
+        "category": "Kidney Function Test",
+        "sample_type": "Blood",
+        "preferred_unit": "mg/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 15,
+                "high": 40
+            }
+        },
+        "critical_range": {
+            "low": 5,
+            "high": 200
+        }
+    },
+    "BLOOD UREA NITROGEN": {
+        "aliases": [
+            "BUN",
+            "BLOOD UREA NITROGEN"
+        ],
+        "category": "Kidney Function Test",
+        "sample_type": "Blood",
+        "preferred_unit": "mg/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 7,
+                "high": 20
+            }
+        },
+        "critical_range": {
+            "low": 2,
+            "high": 120
+        }
+    },
+    "BUN CREATININE RATIO": {
+        "aliases": [
+            "BUN/CREATININE RATIO",
+            "BUN CREATININE RATIO",
+            "BCR"
+        ],
+        "category": "Kidney Function Test",
+        "sample_type": "Blood",
+        "preferred_unit": "",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 10,
+                "high": 20
+            }
+        },
+        "critical_range": {
+            "low": 5,
+            "high": 50
+        }
+    },
+    "EGFR": {
+        "aliases": [
+            "EGFR",
+            "EGFR",
+            "ESTIMATED GLOMERULAR FILTRATION RATE",
+            "GFR"
+        ],
+        "category": "Kidney Function Test",
+        "sample_type": "Blood",
+        "preferred_unit": "mL/min/1.73m²",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 90,
+                "high": 200
+            }
+        },
+        "critical_range": {
+            "low": 15,
+            "high": 250
+        }
+    },
+    "URIC ACID": {
+        "aliases": [
+            "URIC ACID",
+            "SERUM URIC ACID"
+        ],
+        "category": "Kidney Function Test",
+        "sample_type": "Blood",
+        "preferred_unit": "mg/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": true,
+        "reference_range": {
+            "male": {
+                "low": 3.4,
+                "high": 7.0
+            },
+            "female": {
+                "low": 2.4,
+                "high": 6.0
+            }
+        },
+        "critical_range": {
+            "low": 1,
+            "high": 15
+        }
+    },
+    "CYSTATIN C": {
+        "aliases": [
+            "CYSTATIN C",
+            "CYSTATIN-C"
+        ],
+        "category": "Kidney Function Test",
+        "sample_type": "Blood",
+        "preferred_unit": "mg/L",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 0.6,
+                "high": 1.2
+            }
+        },
+        "critical_range": {
+            "low": 0.2,
+            "high": 5
+        }
+    },
+    "CREATININE CLEARANCE": {
+        "aliases": [
+            "CREATININE CLEARANCE",
+            "CCR",
+            "CRCL"
+        ],
+        "category": "Kidney Function Test",
+        "sample_type": "Urine",
+        "preferred_unit": "mL/min",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": true,
+        "reference_range": {
+            "male": {
+                "low": 97,
+                "high": 137
+            },
+            "female": {
+                "low": 88,
+                "high": 128
+            }
+        },
+        "critical_range": {
+            "low": 15,
+            "high": 250
+        }
+    },
+    "URINE MICROALBUMIN": {
+        "aliases": [
+            "MICROALBUMIN",
+            "URINE MICROALBUMIN"
+        ],
+        "category": "Kidney Function Test",
+        "sample_type": "Urine",
+        "preferred_unit": "mg/L",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 30
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 300
+        }
+    },
+    "ALBUMIN CREATININE RATIO": {
+        "aliases": [
+            "ACR",
+            "ALBUMIN CREATININE RATIO",
+            "URINE ACR"
+        ],
+        "category": "Kidney Function Test",
+        "sample_type": "Urine",
+        "preferred_unit": "mg/g",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 30
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 300
+        }
+    },
+    "ALT": {
+        "aliases": [
+            "ALT",
+            "SGPT",
+            "ALANINE AMINOTRANSFERASE"
+        ],
+        "category": "Liver Function Test",
+        "sample_type": "Blood",
+        "preferred_unit": "U/L",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 7,
+                "high": 56
+            }
+        },
+        "critical_range": {
+            "low": 2,
+            "high": 1000
+        }
+    },
+    "AST": {
+        "aliases": [
+            "AST",
+            "SGOT",
+            "ASPARTATE AMINOTRANSFERASE"
+        ],
+        "category": "Liver Function Test",
+        "sample_type": "Blood",
+        "preferred_unit": "U/L",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 10,
+                "high": 40
+            }
+        },
+        "critical_range": {
+            "low": 2,
+            "high": 1000
+        }
+    },
+    "ALKALINE PHOSPHATASE": {
+        "aliases": [
+            "ALP",
+            "ALK PHOS",
+            "ALKALINE PHOSPHATASE"
+        ],
+        "category": "Liver Function Test",
+        "sample_type": "Blood",
+        "preferred_unit": "U/L",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 44,
+                "high": 147
+            }
+        },
+        "critical_range": {
+            "low": 20,
+            "high": 1000
+        }
+    },
+    "GGT": {
+        "aliases": [
+            "GGT",
+            "GGTP",
+            "GAMMA GLUTAMYL TRANSFERASE"
+        ],
+        "category": "Liver Function Test",
+        "sample_type": "Blood",
+        "preferred_unit": "U/L",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": true,
+        "reference_range": {
+            "male": {
+                "low": 8,
+                "high": 61
+            },
+            "female": {
+                "low": 5,
+                "high": 36
+            }
+        },
+        "critical_range": {
+            "low": 2,
+            "high": 1000
+        }
+    },
+    "TOTAL BILIRUBIN": {
+        "aliases": [
+            "TOTAL BILIRUBIN",
+            "BILIRUBIN"
+        ],
+        "category": "Liver Function Test",
+        "sample_type": "Blood",
+        "preferred_unit": "mg/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 0.2,
+                "high": 1.2
+            }
+        },
+        "critical_range": {
+            "low": 0.1,
+            "high": 20
+        }
+    },
+    "DIRECT BILIRUBIN": {
+        "aliases": [
+            "DIRECT BILIRUBIN",
+            "CONJUGATED BILIRUBIN"
+        ],
+        "category": "Liver Function Test",
+        "sample_type": "Blood",
+        "preferred_unit": "mg/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 0.3
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 10
+        }
+    },
+    "INDIRECT BILIRUBIN": {
+        "aliases": [
+            "INDIRECT BILIRUBIN",
+            "UNCONJUGATED BILIRUBIN"
+        ],
+        "category": "Liver Function Test",
+        "sample_type": "Blood",
+        "preferred_unit": "mg/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 0.2,
+                "high": 0.9
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 20
+        }
+    },
+    "ALBUMIN": {
+        "aliases": [
+            "ALBUMIN",
+            "SERUM ALBUMIN"
+        ],
+        "category": "Liver Function Test",
+        "sample_type": "Blood",
+        "preferred_unit": "g/dL",
+        "alternate_units": [
+            "g/L"
+        ],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 3.5,
+                "high": 5.0
+            }
+        },
+        "critical_range": {
+            "low": 2.0,
+            "high": 6.5
+        }
+    },
+    "GLOBULIN": {
+        "aliases": [
+            "GLOBULIN",
+            "SERUM GLOBULIN"
+        ],
+        "category": "Liver Function Test",
+        "sample_type": "Blood",
+        "preferred_unit": "g/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 2.0,
+                "high": 3.5
+            }
+        },
+        "critical_range": {
+            "low": 1.0,
+            "high": 6.0
+        }
+    },
+    "TOTAL PROTEIN": {
+        "aliases": [
+            "TOTAL PROTEIN",
+            "SERUM PROTEIN"
+        ],
+        "category": "Liver Function Test",
+        "sample_type": "Blood",
+        "preferred_unit": "g/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 6.0,
+                "high": 8.3
+            }
+        },
+        "critical_range": {
+            "low": 3.0,
+            "high": 10.0
+        }
+    },
+    "A/G RATIO": {
+        "aliases": [
+            "A/G RATIO",
+            "ALBUMIN GLOBULIN RATIO",
+            "AGR"
+        ],
+        "category": "Liver Function Test",
+        "sample_type": "Blood",
+        "preferred_unit": "",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 1.0,
+                "high": 2.5
+            }
+        },
+        "critical_range": {
+            "low": 0.3,
+            "high": 5.0
+        }
+    },
+    "TOTAL CHOLESTEROL": {
+        "aliases": [
+            "TOTAL CHOLESTEROL",
+            "CHOLESTEROL",
+            "TC"
+        ],
+        "category": "Lipid Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "mg/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 125,
+                "high": 200
+            }
+        },
+        "critical_range": {
+            "low": 80,
+            "high": 400
+        }
+    },
+    "HDL CHOLESTEROL": {
+        "aliases": [
+            "HDL",
+            "HDL CHOLESTEROL",
+            "HIGH DENSITY LIPOPROTEIN"
+        ],
+        "category": "Lipid Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "mg/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": true,
+        "reference_range": {
+            "male": {
+                "low": 40,
+                "high": 80
+            },
+            "female": {
+                "low": 50,
+                "high": 90
+            }
+        },
+        "critical_range": {
+            "low": 20,
+            "high": 120
+        }
+    },
+    "LDL CHOLESTEROL": {
+        "aliases": [
+            "LDL",
+            "LDL CHOLESTEROL",
+            "LOW DENSITY LIPOPROTEIN"
+        ],
+        "category": "Lipid Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "mg/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 100
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 250
+        }
+    },
+    "VLDL CHOLESTEROL": {
+        "aliases": [
+            "VLDL",
+            "VLDL CHOLESTEROL",
+            "VERY LOW DENSITY LIPOPROTEIN"
+        ],
+        "category": "Lipid Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "mg/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 5,
+                "high": 40
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 150
+        }
+    },
+    "TRIGLYCERIDES": {
+        "aliases": [
+            "TRIGLYCERIDES",
+            "TG"
+        ],
+        "category": "Lipid Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "mg/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 150
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 500
+        }
+    },
+    "NON HDL CHOLESTEROL": {
+        "aliases": [
+            "NON HDL",
+            "NON HDL CHOLESTEROL",
+            "NON-HDL"
+        ],
+        "category": "Lipid Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "mg/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 130
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 300
+        }
+    },
+    "TOTAL CHOLESTEROL HDL RATIO": {
+        "aliases": [
+            "TC/HDL",
+            "CHOLESTEROL HDL RATIO",
+            "TOTAL CHOLESTEROL HDL RATIO"
+        ],
+        "category": "Lipid Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 5
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 12
+        }
+    },
+    "LDL HDL RATIO": {
+        "aliases": [
+            "LDL/HDL",
+            "LDL HDL RATIO"
+        ],
+        "category": "Lipid Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 3.5
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 10
+        }
+    },
+    "APOLIPOPROTEIN A1": {
+        "aliases": [
+            "APO A1",
+            "APOLIPOPROTEIN A1",
+            "APOA1"
+        ],
+        "category": "Lipid Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "mg/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": true,
+        "reference_range": {
+            "male": {
+                "low": 94,
+                "high": 176
+            },
+            "female": {
+                "low": 101,
+                "high": 199
+            }
+        },
+        "critical_range": {
+            "low": 50,
+            "high": 300
+        }
+    },
+    "APOLIPOPROTEIN B": {
+        "aliases": [
+            "APO B",
+            "APOLIPOPROTEIN B",
+            "APOB"
+        ],
+        "category": "Lipid Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "mg/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 55,
+                "high": 125
+            }
+        },
+        "critical_range": {
+            "low": 20,
+            "high": 250
+        }
+    },
+    "LIPOPROTEIN A": {
+        "aliases": [
+            "LPA",
+            "LP(A)",
+            "LIPOPROTEIN A"
+        ],
+        "category": "Lipid Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "mg/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 30
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 200
+        }
+    },
+    "SODIUM": {
+        "aliases": [
+            "SODIUM",
+            "NA",
+            "Na+",
+            "SERUM SODIUM"
+        ],
+        "category": "Electrolyte Panel",
+        "sample_type": "Blood",
+        "preferred_unit": "mmol/L",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 135,
+                "high": 145
+            }
+        },
+        "critical_range": {
+            "low": 120,
+            "high": 160
+        }
+    },
+    "POTASSIUM": {
+        "aliases": [
+            "POTASSIUM",
+            "K",
+            "K+",
+            "SERUM POTASSIUM"
+        ],
+        "category": "Electrolyte Panel",
+        "sample_type": "Blood",
+        "preferred_unit": "mmol/L",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 3.5,
+                "high": 5.1
+            }
+        },
+        "critical_range": {
+            "low": 2.5,
+            "high": 6.5
+        }
+    },
+    "CHLORIDE": {
+        "aliases": [
+            "CHLORIDE",
+            "CHLORINE",
+            "CL",
+            "Cl-"
+        ],
+        "category": "Electrolyte Panel",
+        "sample_type": "Blood",
+        "preferred_unit": "mmol/L",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 98,
+                "high": 107
+            }
+        },
+        "critical_range": {
+            "low": 80,
+            "high": 120
+        }
+    },
+    "TOTAL CALCIUM": {
+        "aliases": [
+            "CALCIUM",
+            "TOTAL CALCIUM",
+            "SERUM CALCIUM"
+        ],
+        "category": "Electrolyte Panel",
+        "sample_type": "Blood",
+        "preferred_unit": "mg/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 8.5,
+                "high": 10.5
+            }
+        },
+        "critical_range": {
+            "low": 6.5,
+            "high": 13
+        }
+    },
+    "IONIZED CALCIUM": {
+        "aliases": [
+            "IONIZED CALCIUM",
+            "FREE CALCIUM",
+            "ICA"
+        ],
+        "category": "Electrolyte Panel",
+        "sample_type": "Blood",
+        "preferred_unit": "mmol/L",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 1.12,
+                "high": 1.32
+            }
+        },
+        "critical_range": {
+            "low": 0.9,
+            "high": 1.6
+        }
+    },
+    "MAGNESIUM": {
+        "aliases": [
+            "MAGNESIUM",
+            "SERUM MAGNESIUM"
+        ],
+        "category": "Electrolyte Panel",
+        "sample_type": "Blood",
+        "preferred_unit": "mg/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 1.7,
+                "high": 2.2
+            }
+        },
+        "critical_range": {
+            "low": 1.0,
+            "high": 4.5
+        }
+    },
+    "PHOSPHORUS": {
+        "aliases": [
+            "PHOSPHORUS",
+            "PHOSPHATE",
+            "INORGANIC PHOSPHORUS"
+        ],
+        "category": "Electrolyte Panel",
+        "sample_type": "Blood",
+        "preferred_unit": "mg/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 2.5,
+                "high": 4.5
+            }
+        },
+        "critical_range": {
+            "low": 1.0,
+            "high": 8.0
+        }
+    },
+    "BICARBONATE": {
+        "aliases": [
+            "BICARBONATE",
+            "HCO3",
+            "HCO3-",
+            "TOTAL CO2"
+        ],
+        "category": "Electrolyte Panel",
+        "sample_type": "Blood",
+        "preferred_unit": "mmol/L",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 22,
+                "high": 29
+            }
+        },
+        "critical_range": {
+            "low": 10,
+            "high": 40
+        }
+    },
+    "ANION GAP": {
+        "aliases": [
+            "ANION GAP",
+            "AG"
+        ],
+        "category": "Electrolyte Panel",
+        "sample_type": "Blood",
+        "preferred_unit": "mmol/L",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 8,
+                "high": 16
+            }
+        },
+        "critical_range": {
+            "low": 4,
+            "high": 30
+        }
+    },
+    "SERUM OSMOLALITY": {
+        "aliases": [
+            "OSMOLALITY",
+            "SERUM OSMOLALITY"
+        ],
+        "category": "Electrolyte Panel",
+        "sample_type": "Blood",
+        "preferred_unit": "mOsm/kg",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 275,
+                "high": 295
+            }
+        },
+        "critical_range": {
+            "low": 250,
+            "high": 340
+        }
+    },
+    "TSH": {
+        "aliases": [
+            "TSH",
+            "THYROID STIMULATING HORMONE",
+            "THYROTROPIN"
+        ],
+        "category": "Thyroid Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "uIU/mL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 0.4,
+                "high": 4.0
+            }
+        },
+        "critical_range": {
+            "low": 0.01,
+            "high": 100
+        }
+    },
+    "FREE T3": {
+        "aliases": [
+            "FREE T3",
+            "FT3",
+            "FREE TRIIODOTHYRONINE"
+        ],
+        "category": "Thyroid Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "pg/mL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 2.3,
+                "high": 4.2
+            }
+        },
+        "critical_range": {
+            "low": 0.5,
+            "high": 15
+        }
+    },
+    "FREE T4": {
+        "aliases": [
+            "FREE T4",
+            "FT4",
+            "FREE THYROXINE"
+        ],
+        "category": "Thyroid Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "ng/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 0.8,
+                "high": 1.8
+            }
+        },
+        "critical_range": {
+            "low": 0.2,
+            "high": 5
+        }
+    },
+    "TOTAL T3": {
+        "aliases": [
+            "TOTAL T3",
+            "T3",
+            "TRIIODOTHYRONINE"
+        ],
+        "category": "Thyroid Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "ng/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 80,
+                "high": 200
+            }
+        },
+        "critical_range": {
+            "low": 30,
+            "high": 500
+        }
+    },
+    "TOTAL T4": {
+        "aliases": [
+            "TOTAL T4",
+            "T4",
+            "THYROXINE"
+        ],
+        "category": "Thyroid Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "ug/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 5.0,
+                "high": 12.0
+            }
+        },
+        "critical_range": {
+            "low": 2,
+            "high": 25
+        }
+    },
+    "TPO ANTIBODY": {
+        "aliases": [
+            "TPO",
+            "ANTI TPO",
+            "TPO ANTIBODY",
+            "ANTI THYROID PEROXIDASE"
+        ],
+        "category": "Thyroid Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "IU/mL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 35
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 1000
+        }
+    },
+    "THYROGLOBULIN ANTIBODY": {
+        "aliases": [
+            "TGAB",
+            "ANTI TG",
+            "THYROGLOBULIN ANTIBODY"
+        ],
+        "category": "Thyroid Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "IU/mL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 40
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 1000
+        }
+    },
+    "THYROGLOBULIN": {
+        "aliases": [
+            "TG",
+            "THYROGLOBULIN"
+        ],
+        "category": "Thyroid Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "ng/mL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 3,
+                "high": 40
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 500
+        }
+    },
+    "TSH RECEPTOR ANTIBODY": {
+        "aliases": [
+            "TRAB",
+            "TSH RECEPTOR ANTIBODY"
+        ],
+        "category": "Thyroid Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "IU/L",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 1.75
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 20
+        }
+    },
+    "THYROID STIMULATING IMMUNOGLOBULIN": {
+        "aliases": [
+            "TSI",
+            "THYROID STIMULATING IMMUNOGLOBULIN"
+        ],
+        "category": "Thyroid Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "%",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 140
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 500
+        }
+    },
+    "SERUM IRON": {
+        "aliases": [
+            "IRON",
+            "SERUM IRON",
+            "FE"
+        ],
+        "category": "Iron Studies",
+        "sample_type": "Blood",
+        "preferred_unit": "ug/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": true,
+        "reference_range": {
+            "male": {
+                "low": 65,
+                "high": 175
+            },
+            "female": {
+                "low": 50,
+                "high": 170
+            }
+        },
+        "critical_range": {
+            "low": 20,
+            "high": 300
+        }
+    },
+    "FERRITIN": {
+        "aliases": [
+            "FERRITIN",
+            "SERUM FERRITIN"
+        ],
+        "category": "Iron Studies",
+        "sample_type": "Blood",
+        "preferred_unit": "ng/mL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": true,
+        "reference_range": {
+            "male": {
+                "low": 30,
+                "high": 400
+            },
+            "female": {
+                "low": 13,
+                "high": 150
+            }
+        },
+        "critical_range": {
+            "low": 5,
+            "high": 2000
+        }
+    },
+    "TOTAL IRON BINDING CAPACITY": {
+        "aliases": [
+            "TIBC",
+            "TOTAL IRON BINDING CAPACITY"
+        ],
+        "category": "Iron Studies",
+        "sample_type": "Blood",
+        "preferred_unit": "ug/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 250,
+                "high": 450
+            }
+        },
+        "critical_range": {
+            "low": 100,
+            "high": 700
+        }
+    },
+    "UNSATURATED IRON BINDING CAPACITY": {
+        "aliases": [
+            "UIBC",
+            "UNSATURATED IRON BINDING CAPACITY"
+        ],
+        "category": "Iron Studies",
+        "sample_type": "Blood",
+        "preferred_unit": "ug/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 150,
+                "high": 375
+            }
+        },
+        "critical_range": {
+            "low": 50,
+            "high": 600
+        }
+    },
+    "TRANSFERRIN": {
+        "aliases": [
+            "TRANSFERRIN",
+            "SERUM TRANSFERRIN"
+        ],
+        "category": "Iron Studies",
+        "sample_type": "Blood",
+        "preferred_unit": "mg/dL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 200,
+                "high": 360
+            }
+        },
+        "critical_range": {
+            "low": 100,
+            "high": 500
+        }
+    },
+    "TRANSFERRIN SATURATION": {
+        "aliases": [
+            "TRANSFERRIN SATURATION",
+            "TSAT",
+            "IRON SATURATION"
+        ],
+        "category": "Iron Studies",
+        "sample_type": "Blood",
+        "preferred_unit": "%",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 20,
+                "high": 50
+            }
+        },
+        "critical_range": {
+            "low": 5,
+            "high": 90
+        }
+    },
+    "SOLUBLE TRANSFERRIN RECEPTOR": {
+        "aliases": [
+            "STFR",
+            "SOLUBLE TRANSFERRIN RECEPTOR"
+        ],
+        "category": "Iron Studies",
+        "sample_type": "Blood",
+        "preferred_unit": "mg/L",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 2.2,
+                "high": 5.0
+            }
+        },
+        "critical_range": {
+            "low": 0.5,
+            "high": 20
+        }
+    },
+    "RETICULOCYTE HEMOGLOBIN": {
+        "aliases": [
+            "RET HE",
+            "RETICULOCYTE HEMOGLOBIN",
+            "CHR"
+        ],
+        "category": "Iron Studies",
+        "sample_type": "Blood",
+        "preferred_unit": "pg",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 28,
+                "high": 35
+            }
+        },
+        "critical_range": {
+            "low": 15,
+            "high": 50
+        }
+    },
+    "VITAMIN D (25-OH)": {
+        "aliases": [
+            "VITAMIN D",
+            "25 OH VITAMIN D",
+            "25-HYDROXY VITAMIN D",
+            "25(OH)D"
+        ],
+        "category": "Vitamin Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "ng/mL",
+        "alternate_units": [
+            "nmol/L"
+        ],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 30,
+                "high": 100
+            }
+        },
+        "critical_range": {
+            "low": 10,
+            "high": 150
+        }
+    },
+    "VITAMIN B12": {
+        "aliases": [
+            "B12",
+            "VITAMIN B12",
+            "COBALAMIN"
+        ],
+        "category": "Vitamin Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "pg/mL",
+        "alternate_units": [
+            "pmol/L"
+        ],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 200,
+                "high": 900
+            }
+        },
+        "critical_range": {
+            "low": 100,
+            "high": 2000
+        }
+    },
+    "FOLATE": {
+        "aliases": [
+            "FOLATE",
+            "FOLIC ACID",
+            "VITAMIN B9"
+        ],
+        "category": "Vitamin Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "ng/mL",
+        "alternate_units": [
+            "nmol/L"
+        ],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 3,
+                "high": 20
+            }
+        },
+        "critical_range": {
+            "low": 1,
+            "high": 50
+        }
+    },
+    "TROPONIN I": {
+        "aliases": [
+            "TROPONIN I",
+            "cTnI",
+            "TnI"
+        ],
+        "category": "Cardiac Markers",
+        "sample_type": "Blood",
+        "preferred_unit": "ng/L",
+        "alternate_units": [
+            "ng/mL",
+            "ug/L"
+        ],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 34
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 50000
+        }
+    },
+    "TROPONIN T": {
+        "aliases": [
+            "TROPONIN T",
+            "cTnT",
+            "TnT"
+        ],
+        "category": "Cardiac Markers",
+        "sample_type": "Blood",
+        "preferred_unit": "ng/L",
+        "alternate_units": [
+            "ng/mL"
+        ],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 14
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 50000
+        }
+    },
+    "CK-MB": {
+        "aliases": [
+            "CKMB",
+            "CK-MB",
+            "CREATINE KINASE MB"
+        ],
+        "category": "Cardiac Markers",
+        "sample_type": "Blood",
+        "preferred_unit": "ng/mL",
+        "alternate_units": [
+            "U/L"
+        ],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 5
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 100
+        }
+    },
+    "BNP": {
+        "aliases": [
+            "BNP",
+            "B-TYPE NATRIURETIC PEPTIDE"
+        ],
+        "category": "Cardiac Markers",
+        "sample_type": "Blood",
+        "preferred_unit": "pg/mL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 100
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 5000
+        }
+    },
+    "NT-PROBNP": {
+        "aliases": [
+            "NT PRO BNP",
+            "NT-PROBNP",
+            "NTPROBNP"
+        ],
+        "category": "Cardiac Markers",
+        "sample_type": "Blood",
+        "preferred_unit": "pg/mL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 125
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 35000
+        }
+    },
+    "C-REACTIVE PROTEIN": {
+        "aliases": [
+            "CRP",
+            "C REACTIVE PROTEIN",
+            "C-REACTIVE PROTEIN"
+        ],
+        "category": "Infection & Inflammatory Markers",
+        "sample_type": "Blood",
+        "preferred_unit": "mg/L",
+        "alternate_units": [
+            "mg/dL"
+        ],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 5
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 300
+        }
+    },
+    "ESR": {
+        "aliases": [
+            "ESR",
+            "ERYTHROCYTE SEDIMENTATION RATE",
+            "SED RATE"
+        ],
+        "category": "Infection & Inflammatory Markers",
+        "sample_type": "Blood",
+        "preferred_unit": "mm/hr",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": true,
+        "reference_range": {
+            "male": {
+                "low": 0,
+                "high": 15
+            },
+            "female": {
+                "low": 0,
+                "high": 20
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 120
+        }
+    },
+    "PROCALCITONIN": {
+        "aliases": [
+            "PCT",
+            "PROCALCITONIN"
+        ],
+        "category": "Infection & Inflammatory Markers",
+        "sample_type": "Blood",
+        "preferred_unit": "ng/mL",
+        "alternate_units": [
+            "ug/L"
+        ],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 0.5
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 100
+        }
+    },
+    "INTERLEUKIN-6": {
+        "aliases": [
+            "IL6",
+            "IL-6",
+            "INTERLEUKIN 6"
+        ],
+        "category": "Infection & Inflammatory Markers",
+        "sample_type": "Blood",
+        "preferred_unit": "pg/mL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 7
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 5000
+        }
+    },
+    "SERUM FERRITIN": {
+        "aliases": [
+            "FERRITIN",
+            "SERUM FERRITIN"
+        ],
+        "category": "Infection & Inflammatory Markers",
+        "sample_type": "Blood",
+        "preferred_unit": "ng/mL",
+        "alternate_units": [
+            "ug/L"
+        ],
+        "datatype": "numeric",
+        "gender_specific": true,
+        "reference_range": {
+            "male": {
+                "low": 30,
+                "high": 400
+            },
+            "female": {
+                "low": 13,
+                "high": 150
+            }
+        },
+        "critical_range": {
+            "low": 5,
+            "high": 5000
+        }
+    },
+    "PROTHROMBIN TIME": {
+        "aliases": [
+            "PT",
+            "PROTHROMBIN TIME"
+        ],
+        "category": "Coagulation Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "seconds",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 11,
+                "high": 13.5
+            }
+        },
+        "critical_range": {
+            "low": 8,
+            "high": 40
+        }
+    },
+    "INR": {
+        "aliases": [
+            "INR",
+            "INTERNATIONAL NORMALIZED RATIO"
+        ],
+        "category": "Coagulation Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 0.8,
+                "high": 1.2
+            }
+        },
+        "critical_range": {
+            "low": 0.5,
+            "high": 10
+        }
+    },
+    "APTT": {
+        "aliases": [
+            "APTT",
+            "aPTT",
+            "ACTIVATED PARTIAL THROMBOPLASTIN TIME"
+        ],
+        "category": "Coagulation Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "seconds",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 25,
+                "high": 35
+            }
+        },
+        "critical_range": {
+            "low": 15,
+            "high": 120
+        }
+    },
+    "D-DIMER": {
+        "aliases": [
+            "D-DIMER",
+            "DDIMER"
+        ],
+        "category": "Coagulation Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "ng/mL FEU",
+        "alternate_units": [
+            "ug/mL FEU"
+        ],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 500
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 10000
+        }
+    },
+    "FIBRINOGEN": {
+        "aliases": [
+            "FIBRINOGEN",
+            "FACTOR I"
+        ],
+        "category": "Coagulation Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "mg/dL",
+        "alternate_units": [
+            "g/L"
+        ],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 200,
+                "high": 400
+            }
+        },
+        "critical_range": {
+            "low": 100,
+            "high": 1000
+        }
+    },
+    "TESTOSTERONE": {
+        "aliases": [
+            "TESTOSTERONE",
+            "TOTAL TESTOSTERONE"
+        ],
+        "category": "Hormone Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "ng/dL",
+        "alternate_units": [
+            "nmol/L"
+        ],
+        "datatype": "numeric",
+        "gender_specific": true,
+        "reference_range": {
+            "male": {
+                "low": 300,
+                "high": 1000
+            },
+            "female": {
+                "low": 15,
+                "high": 70
+            }
+        },
+        "critical_range": {
+            "low": 50,
+            "high": 2000
+        }
+    },
+    "FREE TESTOSTERONE": {
+        "aliases": [
+            "FREE TESTOSTERONE",
+            "FT"
+        ],
+        "category": "Hormone Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "pg/mL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": true,
+        "reference_range": {
+            "male": {
+                "low": 35,
+                "high": 155
+            },
+            "female": {
+                "low": 0.3,
+                "high": 3.5
+            }
+        },
+        "critical_range": {
+            "low": 5,
+            "high": 500
+        }
+    },
+    "ESTRADIOL": {
+        "aliases": [
+            "ESTRADIOL",
+            "E2"
+        ],
+        "category": "Hormone Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "pg/mL",
+        "alternate_units": [
+            "pmol/L"
+        ],
+        "datatype": "numeric",
+        "gender_specific": true,
+        "reference_range": {
+            "male": {
+                "low": 10,
+                "high": 40
+            },
+            "female": {
+                "low": 30,
+                "high": 400
+            }
+        },
+        "critical_range": {
+            "low": 5,
+            "high": 3000
+        }
+    },
+    "PROGESTERONE": {
+        "aliases": [
+            "PROGESTERONE"
+        ],
+        "category": "Hormone Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "ng/mL",
+        "alternate_units": [
+            "nmol/L"
+        ],
+        "datatype": "numeric",
+        "gender_specific": true,
+        "reference_range": {
+            "male": {
+                "low": 0.1,
+                "high": 1.0
+            },
+            "female": {
+                "low": 0.1,
+                "high": 25
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 100
+        }
+    },
+    "LH": {
+        "aliases": [
+            "LH",
+            "LUTEINIZING HORMONE"
+        ],
+        "category": "Hormone Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "mIU/mL",
+        "alternate_units": [
+            "IU/L"
+        ],
+        "datatype": "numeric",
+        "gender_specific": true,
+        "reference_range": {
+            "male": {
+                "low": 1.7,
+                "high": 8.6
+            },
+            "female": {
+                "low": 2,
+                "high": 95
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 200
+        }
+    },
+    "FSH": {
+        "aliases": [
+            "FSH",
+            "FOLLICLE STIMULATING HORMONE"
+        ],
+        "category": "Hormone Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "mIU/mL",
+        "alternate_units": [
+            "IU/L"
+        ],
+        "datatype": "numeric",
+        "gender_specific": true,
+        "reference_range": {
+            "male": {
+                "low": 1.5,
+                "high": 12.4
+            },
+            "female": {
+                "low": 3,
+                "high": 135
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 250
+        }
+    },
+    "PROLACTIN": {
+        "aliases": [
+            "PROLACTIN",
+            "PRL"
+        ],
+        "category": "Hormone Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "ng/mL",
+        "alternate_units": [
+            "ug/L"
+        ],
+        "datatype": "numeric",
+        "gender_specific": true,
+        "reference_range": {
+            "male": {
+                "low": 4,
+                "high": 15
+            },
+            "female": {
+                "low": 5,
+                "high": 25
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 300
+        }
+    },
+    "CORTISOL": {
+        "aliases": [
+            "CORTISOL",
+            "SERUM CORTISOL"
+        ],
+        "category": "Hormone Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "ug/dL",
+        "alternate_units": [
+            "nmol/L"
+        ],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 5,
+                "high": 25
+            }
+        },
+        "critical_range": {
+            "low": 1,
+            "high": 80
+        }
+    },
+    "INSULIN": {
+        "aliases": [
+            "INSULIN",
+            "FASTING INSULIN"
+        ],
+        "category": "Hormone Profile",
+        "sample_type": "Blood",
+        "preferred_unit": "uIU/mL",
+        "alternate_units": [
+            "pmol/L"
+        ],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 2,
+                "high": 25
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 300
+        }
+    },
+    "AMYLASE": {
+        "aliases": [
+            "AMYLASE",
+            "SERUM AMYLASE"
+        ],
+        "category": "Pancreatic Enzymes",
+        "sample_type": "Blood",
+        "preferred_unit": "U/L",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 30,
+                "high": 110
+            }
+        },
+        "critical_range": {
+            "low": 5,
+            "high": 1500
+        }
+    },
+    "LIPASE": {
+        "aliases": [
+            "LIPASE",
+            "SERUM LIPASE"
+        ],
+        "category": "Pancreatic Enzymes",
+        "sample_type": "Blood",
+        "preferred_unit": "U/L",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 13,
+                "high": 60
+            }
+        },
+        "critical_range": {
+            "low": 5,
+            "high": 3000
+        }
+    },
+    "TRYPSINOGEN": {
+        "aliases": [
+            "TRYPSINOGEN"
+        ],
+        "category": "Pancreatic Enzymes",
+        "sample_type": "Blood",
+        "preferred_unit": "ng/mL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 10,
+                "high": 57
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 500
+        }
+    },
+    "ELASTASE": {
+        "aliases": [
+            "ELASTASE",
+            "PANCREATIC ELASTASE"
+        ],
+        "category": "Pancreatic Enzymes",
+        "sample_type": "Stool",
+        "preferred_unit": "ug/g",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 200,
+                "high": 1000
+            }
+        },
+        "critical_range": {
+            "low": 50,
+            "high": 2000
+        }
+    },
+    "URINE COLOR": {
+        "aliases": [
+            "COLOR",
+            "URINE COLOR"
+        ],
+        "category": "Urine Routine",
+        "sample_type": "Urine",
+        "preferred_unit": "",
+        "alternate_units": [],
+        "datatype": "text"
+    },
+    "URINE APPEARANCE": {
+        "aliases": [
+            "APPEARANCE",
+            "CLARITY",
+            "URINE APPEARANCE"
+        ],
+        "category": "Urine Routine",
+        "sample_type": "Urine",
+        "preferred_unit": "",
+        "alternate_units": [],
+        "datatype": "text"
+    },
+    "SPECIFIC GRAVITY": {
+        "aliases": [
+            "SPECIFIC GRAVITY",
+            "SP GR"
+        ],
+        "category": "Urine Routine",
+        "sample_type": "Urine",
+        "preferred_unit": "",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "reference_range": {
+            "general": {
+                "low": 1.005,
+                "high": 1.030
+            }
+        }
+    },
+    "URINE PH": {
+        "aliases": [
+            "PH",
+            "URINE PH"
+        ],
+        "category": "Urine Routine",
+        "sample_type": "Urine",
+        "preferred_unit": "",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "reference_range": {
+            "general": {
+                "low": 4.5,
+                "high": 8.0
+            }
+        }
+    },
+    "PROTEIN": {
+        "aliases": [
+            "PROTEIN"
+        ],
+        "category": "Urine Routine",
+        "sample_type": "Urine",
+        "preferred_unit": "",
+        "alternate_units": [],
+        "datatype": "numeric"
+    },
+    "KETONES": {
+        "aliases": [
+            "KETONE",
+            "KETONES"
+        ],
+        "category": "Urine Routine",
+        "sample_type": "Urine",
+        "preferred_unit": "",
+        "alternate_units": [],
+        "datatype": "positive_negative"
+    },
+    "BILIRUBIN": {
+        "aliases": [
+            "BILIRUBIN"
+        ],
+        "category": "Urine Routine",
+        "sample_type": "Urine",
+        "preferred_unit": "",
+        "alternate_units": [],
+        "datatype": "positive_negative"
+    },
+    "UROBILINOGEN": {
+        "aliases": [
+            "UROBILINOGEN"
+        ],
+        "category": "Urine Routine",
+        "sample_type": "Urine",
+        "preferred_unit": "mg/dL",
+        "alternate_units": [],
+        "datatype": "numeric"
+    },
+    "NITRITE": {
+        "aliases": [
+            "NITRITE"
+        ],
+        "category": "Urine Routine",
+        "sample_type": "Urine",
+        "preferred_unit": "",
+        "alternate_units": [],
+        "datatype": "positive_negative"
+    },
+    "LEUKOCYTE ESTERASE": {
+        "aliases": [
+            "LEUKOCYTE ESTERASE",
+            "LE ESTERASE"
+        ],
+        "category": "Urine Routine",
+        "sample_type": "Urine",
+        "preferred_unit": "",
+        "alternate_units": [],
+        "datatype": "positive_negative"
+    },
+    "RBC (URINE)": {
+        "aliases": [
+            "RBC",
+            "RED BLOOD CELLS"
+        ],
+        "category": "Urine Microscopy",
+        "sample_type": "Urine",
+        "preferred_unit": "/HPF",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 2
+            }
+        }
+    },
+    "WBC (URINE)": {
+        "aliases": [
+            "WBC",
+            "PUS CELLS",
+            "LEUCOCYTES"
+        ],
+        "category": "Urine Microscopy",
+        "sample_type": "Urine",
+        "preferred_unit": "/HPF",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 5
+            }
+        }
+    },
+    "EPITHELIAL CELLS": {
+        "aliases": [
+            "EPITHELIAL CELLS"
+        ],
+        "category": "Urine Microscopy",
+        "sample_type": "Urine",
+        "preferred_unit": "/HPF",
+        "alternate_units": [],
+        "datatype": "numeric"
+    },
+    "CASTS": {
+        "aliases": [
+            "CAST",
+            "URINARY CASTS"
+        ],
+        "category": "Urine Microscopy",
+        "sample_type": "Urine",
+        "preferred_unit": "/LPF",
+        "alternate_units": [],
+        "datatype": "numeric"
+    },
+    "CRYSTALS": {
+        "aliases": [
+            "CRYSTALS",
+            "URINE CRYSTALS"
+        ],
+        "category": "Urine Microscopy",
+        "sample_type": "Urine",
+        "preferred_unit": "/HPF",
+        "alternate_units": [],
+        "datatype": "numeric"
+    },
+    "BACTERIA": {
+        "aliases": [
+            "BACTERIA"
+        ],
+        "category": "Urine Microscopy",
+        "sample_type": "Urine",
+        "preferred_unit": "",
+        "alternate_units": [],
+        "datatype": "positive_negative"
+    },
+    "YEAST": {
+        "aliases": [
+            "YEAST"
+        ],
+        "category": "Urine Microscopy",
+        "sample_type": "Urine",
+        "preferred_unit": "",
+        "alternate_units": [],
+        "datatype": "positive_negative"
+    },
+    "PSA": {
+        "aliases": [
+            "PSA",
+            "PROSTATE SPECIFIC ANTIGEN"
+        ],
+        "category": "Tumor Markers",
+        "sample_type": "Blood",
+        "preferred_unit": "ng/mL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "reference_range": {
+            "male": {
+                "low": 0,
+                "high": 4
+            }
+        }
+    },
+    "CEA": {
+        "aliases": [
+            "CEA",
+            "CARCINOEMBRYONIC ANTIGEN"
+        ],
+        "category": "Tumor Markers",
+        "sample_type": "Blood",
+        "preferred_unit": "ng/mL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 5
+            }
+        }
+    },
+    "AFP": {
+        "aliases": [
+            "AFP",
+            "ALPHA FETOPROTEIN"
+        ],
+        "category": "Tumor Markers",
+        "sample_type": "Blood",
+        "preferred_unit": "ng/mL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 10
+            }
+        }
+    },
+    "CA-125": {
+        "aliases": [
+            "CA125",
+            "CA-125"
+        ],
+        "category": "Tumor Markers",
+        "sample_type": "Blood",
+        "preferred_unit": "U/mL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 35
+            }
+        }
+    },
+    "CA 19-9": {
+        "aliases": [
+            "CA19-9",
+            "CA 19-9"
+        ],
+        "category": "Tumor Markers",
+        "sample_type": "Blood",
+        "preferred_unit": "U/mL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 37
+            }
+        }
+    },
+    "CA 15-3": {
+        "aliases": [
+            "CA15-3",
+            "CA 15-3"
+        ],
+        "category": "Tumor Markers",
+        "sample_type": "Blood",
+        "preferred_unit": "U/mL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 30
+            }
+        }
+    },
+    "BETA HCG": {
+        "aliases": [
+            "BETA HCG",
+            "β-HCG",
+            "BHCG"
+        ],
+        "category": "Tumor Markers",
+        "sample_type": "Blood",
+        "preferred_unit": "mIU/mL",
+        "alternate_units": [],
+        "datatype": "numeric"
+    },
+    "CALCITONIN": {
+        "aliases": [
+            "CALCITONIN"
+        ],
+        "category": "Tumor Markers",
+        "sample_type": "Blood",
+        "preferred_unit": "pg/mL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 10
+            }
+        }
+    },
+    "ANA": {
+        "aliases": [
+            "ANA",
+            "ANTINUCLEAR ANTIBODY"
+        ],
+        "category": "Autoimmune / Immunology",
+        "sample_type": "Blood",
+        "preferred_unit": "Index",
+        "alternate_units": [
+            "Titer"
+        ],
+        "datatype": "numeric"
+    },
+    "ANTI DSDNA": {
+        "aliases": [
+            "ANTI DSDNA",
+            "ANTI-DSDNA",
+            "DSDNA ANTIBODY"
+        ],
+        "category": "Autoimmune / Immunology",
+        "sample_type": "Blood",
+        "preferred_unit": "IU/mL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 30
+            }
+        }
+    },
+    "RHEUMATOID FACTOR": {
+        "aliases": [
+            "RF",
+            "RHEUMATOID FACTOR"
+        ],
+        "category": "Autoimmune / Immunology",
+        "sample_type": "Blood",
+        "preferred_unit": "IU/mL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 20
+            }
+        }
+    },
+    "ANTI CCP": {
+        "aliases": [
+            "ANTI CCP",
+            "ACPA",
+            "ANTI CYCLIC CITRULLINATED PEPTIDE"
+        ],
+        "category": "Autoimmune / Immunology",
+        "sample_type": "Blood",
+        "preferred_unit": "U/mL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 20
+            }
+        }
+    },
+    "C3 COMPLEMENT": {
+        "aliases": [
+            "C3",
+            "COMPLEMENT C3"
+        ],
+        "category": "Autoimmune / Immunology",
+        "sample_type": "Blood",
+        "preferred_unit": "mg/dL",
+        "alternate_units": [
+            "g/L"
+        ],
+        "datatype": "numeric",
+        "reference_range": {
+            "general": {
+                "low": 90,
+                "high": 180
+            }
+        }
+    },
+    "C4 COMPLEMENT": {
+        "aliases": [
+            "C4",
+            "COMPLEMENT C4"
+        ],
+        "category": "Autoimmune / Immunology",
+        "sample_type": "Blood",
+        "preferred_unit": "mg/dL",
+        "alternate_units": [
+            "g/L"
+        ],
+        "datatype": "numeric",
+        "reference_range": {
+            "general": {
+                "low": 10,
+                "high": 40
+            }
+        }
+    },
+    "IGE": {
+        "aliases": [
+            "IGE",
+            "IMMUNOGLOBULIN E"
+        ],
+        "category": "Autoimmune / Immunology",
+        "sample_type": "Blood",
+        "preferred_unit": "IU/mL",
+        "alternate_units": [
+            "kU/L"
+        ],
+        "datatype": "numeric",
+        "reference_range": {
+            "general": {
+                "low": 0,
+                "high": 100
+            }
+        }
+    },
+    "IGG": {
+        "aliases": [
+            "IGG",
+            "IMMUNOGLOBULIN G"
+        ],
+        "category": "Autoimmune / Immunology",
+        "sample_type": "Blood",
+        "preferred_unit": "mg/dL",
+        "alternate_units": [
+            "g/L"
+        ],
+        "datatype": "numeric"
+    },
+    "IGA": {
+        "aliases": [
+            "IGA",
+            "IMMUNOGLOBULIN A"
+        ],
+        "category": "Autoimmune / Immunology",
+        "sample_type": "Blood",
+        "preferred_unit": "mg/dL",
+        "alternate_units": [
+            "g/L"
+        ],
+        "datatype": "numeric"
+    },
+    "IGM": {
+        "aliases": [
+            "IGM",
+            "IMMUNOGLOBULIN M"
+        ],
+        "category": "Autoimmune / Immunology",
+        "sample_type": "Blood",
+        "preferred_unit": "mg/dL",
+        "alternate_units": [
+            "g/L"
+        ],
+        "datatype": "numeric"
+    },
+    "HBSAG": {
+        "aliases": [
+            "HBsAg",
+            "HEPATITIS B SURFACE ANTIGEN"
+        ],
+        "category": "Viral / Serology",
+        "sample_type": "Blood",
+        "preferred_unit": "",
+        "alternate_units": [],
+        "datatype": "positive_negative"
+    },
+    "ANTI HBS": {
+        "aliases": [
+            "ANTI HBS",
+            "HBsAb"
+        ],
+        "category": "Viral / Serology",
+        "sample_type": "Blood",
+        "preferred_unit": "mIU/mL",
+        "alternate_units": [],
+        "datatype": "numeric"
+    },
+    "ANTI HCV": {
+        "aliases": [
+            "ANTI HCV",
+            "HCV ANTIBODY"
+        ],
+        "category": "Viral / Serology",
+        "sample_type": "Blood",
+        "preferred_unit": "",
+        "alternate_units": [],
+        "datatype": "positive_negative"
+    },
+    "HIV 1/2": {
+        "aliases": [
+            "HIV",
+            "HIV 1",
+            "HIV 2",
+            "HIV 1/2"
+        ],
+        "category": "Viral / Serology",
+        "sample_type": "Blood",
+        "preferred_unit": "",
+        "alternate_units": [],
+        "datatype": "positive_negative"
+    },
+    "DENGUE NS1": {
+        "aliases": [
+            "NS1",
+            "DENGUE NS1"
+        ],
+        "category": "Viral / Serology",
+        "sample_type": "Blood",
+        "preferred_unit": "",
+        "alternate_units": [],
+        "datatype": "positive_negative"
+    },
+    "DENGUE IGM": {
+        "aliases": [
+            "DENGUE IGM"
+        ],
+        "category": "Viral / Serology",
+        "sample_type": "Blood",
+        "preferred_unit": "",
+        "alternate_units": [],
+        "datatype": "positive_negative"
+    },
+    "DENGUE IGG": {
+        "aliases": [
+            "DENGUE IGG"
+        ],
+        "category": "Viral / Serology",
+        "sample_type": "Blood",
+        "preferred_unit": "",
+        "alternate_units": [],
+        "datatype": "positive_negative"
+    },
+    "COVID-19": {
+        "aliases": [
+            "COVID",
+            "COVID 19",
+            "COVID-19",
+            "SARS-COV-2"
+        ],
+        "category": "Viral / Serology",
+        "sample_type": "Swab",
+        "preferred_unit": "",
+        "alternate_units": [],
+        "datatype": "positive_negative"
+    },
+    "MALARIA ANTIGEN": {
+        "aliases": [
+            "MALARIA",
+            "MALARIA ANTIGEN",
+            "PF/PV"
+        ],
+        "category": "Viral / Serology",
+        "sample_type": "Blood",
+        "preferred_unit": "",
+        "alternate_units": [],
+        "datatype": "positive_negative"
+    },
+    "WIDAL": {
+        "aliases": [
+            "WIDAL",
+            "SALMONELLA ANTIBODY"
+        ],
+        "category": "Viral / Serology",
+        "sample_type": "Blood",
+        "preferred_unit": "Titer",
+        "alternate_units": [],
+        "datatype": "text"
+    },
+    "PH": {
+        "aliases": [
+            "PH",
+            "BLOOD PH"
+        ],
+        "category": "Arterial Blood Gas",
+        "sample_type": "Arterial Blood",
+        "preferred_unit": "",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 7.35,
+                "high": 7.45
+            }
+        },
+        "critical_range": {
+            "low": 7.0,
+            "high": 7.7
+        }
+    },
+    "PCO2": {
+        "aliases": [
+            "PCO2",
+            "PaCO2",
+            "CARBON DIOXIDE"
+        ],
+        "category": "Arterial Blood Gas",
+        "sample_type": "Arterial Blood",
+        "preferred_unit": "mmHg",
+        "alternate_units": [
+            "kPa"
+        ],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 35,
+                "high": 45
+            }
+        },
+        "critical_range": {
+            "low": 20,
+            "high": 80
+        }
+    },
+    "PO2": {
+        "aliases": [
+            "PO2",
+            "PaO2",
+            "OXYGEN PRESSURE"
+        ],
+        "category": "Arterial Blood Gas",
+        "sample_type": "Arterial Blood",
+        "preferred_unit": "mmHg",
+        "alternate_units": [
+            "kPa"
+        ],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 80,
+                "high": 100
+            }
+        },
+        "critical_range": {
+            "low": 40,
+            "high": 500
+        }
+    },
+    "HCO3": {
+        "aliases": [
+            "HCO3",
+            "HCO3-",
+            "BICARBONATE"
+        ],
+        "category": "Arterial Blood Gas",
+        "sample_type": "Arterial Blood",
+        "preferred_unit": "mmol/L",
+        "alternate_units": [
+            "mEq/L"
+        ],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 22,
+                "high": 26
+            }
+        },
+        "critical_range": {
+            "low": 10,
+            "high": 45
+        }
+    },
+    "BASE EXCESS": {
+        "aliases": [
+            "BASE EXCESS",
+            "BE"
+        ],
+        "category": "Arterial Blood Gas",
+        "sample_type": "Arterial Blood",
+        "preferred_unit": "mmol/L",
+        "alternate_units": [
+            "mEq/L"
+        ],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": -2,
+                "high": 2
+            }
+        },
+        "critical_range": {
+            "low": -20,
+            "high": 20
+        }
+    },
+    "OXYGEN SATURATION": {
+        "aliases": [
+            "SAO2",
+            "O2 SATURATION",
+            "OXYGEN SATURATION",
+            "SPO2"
+        ],
+        "category": "Arterial Blood Gas",
+        "sample_type": "Arterial Blood",
+        "preferred_unit": "%",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 95,
+                "high": 100
+            }
+        },
+        "critical_range": {
+            "low": 70,
+            "high": 100
+        }
+    },
+    "LACTATE": {
+        "aliases": [
+            "LACTATE",
+            "LACTIC ACID"
+        ],
+        "category": "Arterial Blood Gas",
+        "sample_type": "Blood",
+        "preferred_unit": "mmol/L",
+        "alternate_units": [
+            "mg/dL"
+        ],
+        "datatype": "numeric",
+        "gender_specific": false,
+        "reference_range": {
+            "general": {
+                "low": 0.5,
+                "high": 2.2
+            }
+        },
+        "critical_range": {
+            "low": 0,
+            "high": 15
+        }
+    },
+    "SEMEN VOLUME": {
+        "aliases": [
+            "SEMEN VOLUME",
+            "VOLUME"
+        ],
+        "category": "Fertility Profile",
+        "sample_type": "Semen",
+        "preferred_unit": "mL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "reference_range": {
+            "general": {
+                "low": 1.5,
+                "high": 6.0
+            }
+        }
+    },
+    "SPERM COUNT": {
+        "aliases": [
+            "SPERM COUNT",
+            "TOTAL SPERM COUNT"
+        ],
+        "category": "Fertility Profile",
+        "sample_type": "Semen",
+        "preferred_unit": "million/mL",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "reference_range": {
+            "general": {
+                "low": 15,
+                "high": 300
+            }
+        }
+    },
+    "SPERM MOTILITY": {
+        "aliases": [
+            "MOTILITY",
+            "SPERM MOTILITY"
+        ],
+        "category": "Fertility Profile",
+        "sample_type": "Semen",
+        "preferred_unit": "%",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "reference_range": {
+            "general": {
+                "low": 40,
+                "high": 100
+            }
+        }
+    },
+    "SPERM MORPHOLOGY": {
+        "aliases": [
+            "MORPHOLOGY",
+            "SPERM MORPHOLOGY"
+        ],
+        "category": "Fertility Profile",
+        "sample_type": "Semen",
+        "preferred_unit": "%",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "reference_range": {
+            "general": {
+                "low": 4,
+                "high": 100
+            }
+        }
+    },
+    "STOOL OCCULT BLOOD": {
+        "aliases": [
+            "OCCULT BLOOD",
+            "FOBT"
+        ],
+        "category": "Stool Examination",
+        "sample_type": "Stool",
+        "preferred_unit": "",
+        "alternate_units": [],
+        "datatype": "positive_negative"
+    },
+    "STOOL OVA": {
+        "aliases": [
+            "OVA",
+            "OVA & PARASITE"
+        ],
+        "category": "Stool Examination",
+        "sample_type": "Stool",
+        "preferred_unit": "",
+        "alternate_units": [],
+        "datatype": "positive_negative"
+    },
+    "STOOL PARASITE": {
+        "aliases": [
+            "PARASITE",
+            "HELMINTH"
+        ],
+        "category": "Stool Examination",
+        "sample_type": "Stool",
+        "preferred_unit": "",
+        "alternate_units": [],
+        "datatype": "positive_negative"
+    },
+    "STOOL WBC": {
+        "aliases": [
+            "STOOL WBC",
+            "FECAL LEUKOCYTES"
+        ],
+        "category": "Stool Examination",
+        "sample_type": "Stool",
+        "preferred_unit": "/HPF",
+        "alternate_units": [],
+        "datatype": "numeric"
+    },
+    "STOOL RBC": {
+        "aliases": [
+            "STOOL RBC"
+        ],
+        "category": "Stool Examination",
+        "sample_type": "Stool",
+        "preferred_unit": "/HPF",
+        "alternate_units": [],
+        "datatype": "numeric"
+    },
+    "STOOL PH": {
+        "aliases": [
+            "STOOL PH"
+        ],
+        "category": "Stool Examination",
+        "sample_type": "Stool",
+        "preferred_unit": "",
+        "alternate_units": [],
+        "datatype": "numeric",
+        "reference_range": {
+            "general": {
+                "low": 6.0,
+                "high": 7.5
+            }
+        }
+    }
+}

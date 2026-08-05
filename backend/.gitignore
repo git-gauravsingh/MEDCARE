@@ -1,0 +1,24 @@
+# Node
+node_modules/
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# Chat History Database
+databases/chat_history.db
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+saved_models/final_xgb_model.pkl
+databases/medicines.db
