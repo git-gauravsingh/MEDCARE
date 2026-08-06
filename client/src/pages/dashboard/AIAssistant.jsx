@@ -33,6 +33,9 @@ const AIAssistant = () => {
     const [chatHistoryList, setChatHistoryList] = useState([]);
     const [currentSessionId, setCurrentSessionId] = useState(null);
 
+
+    const AI_API_BASE_URL = import.meta.env.VITE_AI_API_URL || "http://localhost:8000";
+
     // --- NAYA HELPER FUNCTION ---
     const getToolName = (mode) => {
         switch (mode) {
@@ -55,8 +58,7 @@ const AIAssistant = () => {
 
     const fetchChatHistory = async () => {
         try {
-            const res = await axios.get("http://localhost:8000/api/chats");
-            setChatHistoryList(res.data);
+            const res = await axios.get(`${AI_API_BASE_URL}/api/chats`); setChatHistoryList(res.data);
         } catch (error) {
             console.error("Failed to fetch chat history:", error);
         }
@@ -64,8 +66,7 @@ const AIAssistant = () => {
 
     const loadSpecificChat = async (chatId) => {
         try {
-            const res = await axios.get(`http://localhost:8000/api/chats/${chatId}`);
-            // Fix: Backend ke raw JSON objects ko formatting dena zaroori hai
+            const res = await axios.get(`${AI_API_BASE_URL}/api/chats/${chatId}`);            // Fix: Backend ke raw JSON objects ko formatting dena zaroori hai
             const formattedMessages = res.data.messages.map(msg => {
                 if (msg.sender === "ai" && typeof msg.content === "object" && msg.content !== null) {
                     if (msg.content.diseases) {
@@ -90,7 +91,7 @@ const AIAssistant = () => {
     const deleteChat = async (chatId, e) => {
         e.stopPropagation(); // Click list-item ko trigger na kare
         try {
-            await axios.delete(`http://localhost:8000/api/chats/${chatId}`);
+            await axios.delete(`${AI_API_BASE_URL}/api/chats/${chatId}`);
             if (currentSessionId === chatId) handleNewChat(); // Agar open chat delete ki toh new start karo
             fetchChatHistory();
         } catch (error) {
@@ -147,7 +148,7 @@ const AIAssistant = () => {
             formData.append("tool_used", "Report Analysis");
             if (currentSessionId) formData.append("session_id", currentSessionId);
 
-            const response = await axios.post("http://localhost:8000/api/predict/report", formData, {
+            const response = await axios.post(`${AI_API_BASE_URL}/api/predict/report`, formData, {
                 headers: { "Content-Type": "multipart/form-data" }
             });
 
@@ -443,7 +444,7 @@ ${toBulletList(m.storage)}
 
         try {
             // --- UPDATED PAYLOAD FOR CHAT HISTORY ---
-            const response = await axios.post("http://localhost:8000/api/chat/message", {
+            const response = await axios.post(`${AI_API_BASE_URL}/api/chat/message`, {
                 session_id: currentSessionId,
                 tool_used: getToolName(assistantMode),
                 message: text,
@@ -544,8 +545,7 @@ ${toBulletList(m.storage)}
 
     const getMedicineDetails = async (id) => {
         try {
-            const res = await axios.get(`http://127.0.0.1:8000/api/medicine/details/${id}`);
-            const medicine = res.data.data;
+            const res = await axios.get(`${AI_API_BASE_URL}/api/medicine/details/${id}`); const medicine = res.data.data;
             setShowSuggestions(false);
             setMedicineSuggestions([]);
             setInputValue("");
@@ -563,7 +563,7 @@ ${toBulletList(m.storage)}
                     time: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
                 },
                 {
-                    id: crypto.randomUUID(), 
+                    id: crypto.randomUUID(),
                     sender: "ai",
                     type: "text",
                     content: aiFormattedText,
@@ -572,7 +572,7 @@ ${toBulletList(m.storage)}
             ]);
 
             // --- NAYA CODE: History Save Karne Ke Liye Backend Call ---
-            const saveRes = await axios.post("http://localhost:8000/api/chat/save_interaction", {
+            const saveRes = await axios.post(`${AI_API_BASE_URL}/api/chat/save_interaction`, {
                 session_id: currentSessionId,
                 tool_used: "Medicine Details",
                 user_message: userText,
@@ -607,7 +607,7 @@ ${toBulletList(m.storage)}
             setLoadingMedicine(true);
 
             const res = await axios.get(
-                `http://127.0.0.1:8000/api/medicine/suggestions`,
+                `${AI_API_BASE_URL}/api/medicine/suggestions`,
                 {
                     params: {
                         query: query
@@ -653,7 +653,7 @@ ${toBulletList(m.storage)}
             if (currentSessionId) formData.append("session_id", currentSessionId);
 
             // NOTE: Match with your backend URL
-            const response = await axios.post("http://localhost:8000/api/predict/image", formData, {
+            const response = await axios.post(`${AI_API_BASE_URL}/api/predict/image`, formData, {
                 headers: { "Content-Type": "multipart/form-data" }
             });
 
