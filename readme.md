@@ -11,7 +11,7 @@ MedCare is a full-stack AI-powered healthcare platform and your health manager, 
 - Multilingual interaction supporting English, Hindi, and Hinglish for symptoms
 - AI-powered healthcare chatbot to help you
 - Doctor, hospital, and clinic recommendations nearby
-- Health update , regular reminder of medicines and appointments.
+- Health update, regular reminder of medicines and appointments
 - Directly appoint a doctor for checkup
 - Budget-oriented healthcare support
 
@@ -28,23 +28,27 @@ MedCare is a full-stack AI-powered healthcare platform and your health manager, 
 ## Technology Stack
 
 ### Frontend
+
 - React.js
 - JavaScript
 - HTML5
 - CSS3
 
 ### Backend
+
 - FastAPI
 - Node.js
 - REST APIs
 - JWT Authentication
 
 ### Database & Knowledge Base
+
 - MongoDB
 - SQLite
 - JSON-based knowledge bases
 
 ### Development Tools
+
 - Git & GitHub
 - Visual Studio Code
 - Postman
@@ -53,26 +57,31 @@ MedCare is a full-stack AI-powered healthcare platform and your health manager, 
 ## System Modules
 
 ### 1. Disease Prediction
+
 Users can enter symptoms in natural language. The system processes the input, maps the symptoms to supported features, and uses an XGBoost model to generate disease predictions with confidence scores.
 
 ### 2. Skin Disease Detection
+
 Users can upload a skin image. The image is preprocessed and passed through an EfficientNet-B0 based classification model to predict the skin disease class.
 
 ### 3. Medicine Information
+
 Users can search for medicines and retrieve relevant information from the medicine database, including available details and usage-related information.
 
 ### 4. Medical Report Analysis
+
 The report analyzer accepts PDF or image-based medical reports and extracts relevant information using pdfplumber and EasyOCR. Extracted values are parsed, normalized, and compared with reference information.
 
 ### 5. AI Healthcare Assistant
+
 The platform provides conversational assistance using Gemini Flash Lite for natural-language understanding, follow-up questions, and response generation.
 
 ### 6. Doctor & Healthcare Services
+
 The platform provides doctor, hospital, and clinic related information through backend APIs and database integration.
 
 ## Architecture
 
-```text
 User
   ↓
 React Frontend
@@ -80,9 +89,9 @@ React Frontend
 Backend APIs
   ↓
 ┌──────────────────────────────────────┐
-│ Disease Prediction │ Skin Detection │
-│ Medicine Search    │ Report Analysis│
-│ AI Assistant       │ Doctor Services│
+│ Disease Prediction │ Skin Detection  │
+│ Medicine Search    │ Report Analysis │
+│ AI Assistant       │ Doctor Services │
 └──────────────────────────────────────┘
   ↓
 ML Models + Databases + Knowledge Bases
@@ -90,7 +99,6 @@ ML Models + Databases + Knowledge Bases
 AI-Assisted Response
   ↓
 React Frontend
-```
 
 ## Live Website
 
@@ -99,16 +107,57 @@ React Frontend
 ## Screenshots
 
 ### Home Page
-![MedCare Home Page](screenshots/home.png)
+
+![Home Page](screenshots/home.png)
+
+### AI Assistant
+
+![AI Assistant](screenshots/aiAssistant.png)
 
 ### Symptom Checker
+
 ![Symptom Checker](screenshots/symptom-checker.png)
 
 ### Skin Disease Detection
+
 ![Skin Disease Detection](screenshots/skin-detection.png)
 
-### Medical Report Analysis
-![Medical Report Analysis](screenshots/report-analyzer.png)
+### Medicine Details
 
-### Medicine Store
-![Medicine Store](screenshots/medicine-store.png)
+![Medicine Details](screenshots/medicineDetails.png)
+
+### Medical Report Analyzer
+
+![Medical Report Analyzer](screenshots/report-analyzer.png)
+
+### My Health
+
+![My Health](screenshots/myHealth.png)
+
+### Doctors
+
+![Doctors](screenshots/doctors.png)
+
+### Hospitals
+
+![Hospitals](screenshots/hospitals.png)
+
+### Clinics
+
+![Clinics](screenshots/clinics.png)
+
+### Blogs
+
+![Blogs](screenshots/blogs.png)
+
+### Appointments
+
+![Appointments](screenshots/appointments.png)
+
+### Medical Reports
+
+![Medical Reports](screenshots/reports.png)
+
+## Disclaimer
+
+MedCare is an academic/project-based healthcare assistance platform. The information and predictions provided by the platform are intended for informational purposes and should not be considered a substitute for professional medical advice, diagnosis, or treatment.
